@@ -1,0 +1,448 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNq4hpdv3gjy82XDaLW6JeG",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/acerpokemon12-sudo/TUGAS-DAA-2/blob/main/TUGAS%202%20DAA\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = [1,2,3]\n",
+        "b = [4,5,6]\n",
+        "hasil = a + b\n",
+        "print(hasil)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_oIrUmDUnxaE",
+        "outputId": "da0b6fc0-9e99-4d51-ef15-5960f4cc8822"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 2, 3, 4, 5, 6]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def add(list_a, list_b):\n",
+        "  result = []\n",
+        "  for first, second in zip(list_a, list_b):\n",
+        "    result.append(first + second)\n",
+        "  return result\n",
+        "\n",
+        "print(a)\n",
+        "print(b)\n",
+        "print(add(a,b))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4jd-kE_2rsZk",
+        "outputId": "6f73a519-7d89-4176-8e6a-f6734b142084"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 2, 3]\n",
+            "[4, 5, 6]\n",
+            "[5, 7, 9]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def add(list_a, list_b):\n",
+        "  result = []\n",
+        "  for first, second in zip(list_a, list_b):\n",
+        "    result.append(first + second)\n",
+        "\n",
+        "  total_sum = sum(result)\n",
+        "  return total_sum\n",
+        "\n",
+        "result_total = add([1,2,3], [4,5,6])\n",
+        "print(result_total)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AWLmOPBQwqvr",
+        "outputId": "48198e27-db20-429e-94a7-2eed76809acd"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "21\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        " import numpy as np\n",
+        "\n",
+        " nilai_siswa = np.array([85, 55, 40, 90])\n",
+        "\n",
+        " print(nilai_siswa[3])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Lr1TogRIzhyL",
+        "outputId": "dc382f18-a4af-4955-9076-5a7dd230d60b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "90\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Hello, World!\")\n",
+        "nama = input(\"Masukkan nama Anda: \")\n",
+        "nim = input(\"Masukkan NIM Anda: \")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WEHr9P_E0FhU",
+        "outputId": "65aadd92-8c3d-4437-bf8d-abc0e6ff7d8b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Hello, World!\n",
+            "Masukkan nama Anda: Shandy Matius\n",
+            "Masukkan NIM Anda: 2024071018\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "print(np.__version__)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ihf911Gm0SWj",
+        "outputId": "a3202ae5-771d-4cf6-fe96-d05e6aca4cfb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2.0.2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x= 4\n",
+        "x= \"sally\"\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ppk2dxpI2IhU",
+        "outputId": "07f234fe-5a2f-4294-db87-44de2d3b4596"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "sally\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def getlast(myList):\n",
+        "  return myList[-1]\n",
+        "\n",
+        "getlast([1,2,3,4,5,6,7,8,9])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "44DlX0cC3Kes",
+        "outputId": "a671b4d8-192d-4734-ded4-203181c60ae9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "9"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 60
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "my_list = [1,2,3,4,5,6,7,8,9]\n",
+        "panjang_list = len(my_list)\n",
+        "print(f\"Panjang list: {panjang_list}\")\n",
+        "last_element = my_list[-1]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "gxk1nuRJ4qC8",
+        "outputId": "ab011aea-1587-4ab3-bc9f-d9454ee1289f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Panjang list: 9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from google.colab import drive\n",
+        "drive.mount('/content/drive')"
+      ],
+      "metadata": {
+        "id": "dPkX95I99C9z"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "36e13389",
+        "outputId": "c7dfa4f8-5150-4d34-cd70-261d2fa050f4"
+      },
+      "source": [
+        "def getKali(myList):\n",
+        "  result = 1\n",
+        "  for number in myList:\n",
+        "    result *= number\n",
+        "  return result\n",
+        "\n",
+        "# Contoh penggunaan\n",
+        "my_numbers = [1, 2, 3, 4, 5]\n",
+        "product = getKali(my_numbers)\n",
+        "print(f\"Hasil perkalian dari {my_numbers} adalah: {product}\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hasil perkalian dari [1, 2, 3, 4, 5] adalah: 120\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dcaae302",
+        "outputId": "193f5579-7656-42bc-abc2-010aa4bb1dfb"
+      },
+      "source": [
+        "def subtract_sets(list_a, list_b):\n",
+        "  \"\"\"\n",
+        "  Mengurangi elemen-elemen dari dua list.\n",
+        "\n",
+        "  Args:\n",
+        "    list_a: List berisi angka.\n",
+        "    list_b: List berisi angka yang akan dikurangkan.\n",
+        "\n",
+        "  Returns:\n",
+        "    List hasil pengurangan. Mengembalikan None jika panjang list tidak sama.\n",
+        "  \"\"\"\n",
+        "  if len(list_a) != len(list_b):\n",
+        "    print(\"Error: Panjang kedua list harus sama.\")\n",
+        "    return None\n",
+        "\n",
+        "  result = []\n",
+        "  for i in range(len(list_a)):\n",
+        "    result.append(list_a[i] - list_b[i])\n",
+        "  return result\n",
+        "\n",
+        "set1 = [10, 20, 30]\n",
+        "set2 = [2, 5, 6]\n",
+        "subtraction_result = subtract_sets(set1, set2)\n",
+        "\n",
+        "if subtraction_result is not None:\n",
+        "  print(f\"Hasil pengurangan {set1} dengan {set2} adalah: {subtraction_result}\")\n",
+        "\n",
+        "set3 = [10, 20]\n",
+        "set4 = [2, 5, 6]\n",
+        "subtract_sets(set3, set4)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hasil pengurangan [10, 20, 30] dengan [2, 5, 6] adalah: [8, 15, 24]\n",
+            "Error: Panjang kedua list harus sama.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "e7c13d88",
+        "outputId": "0499ef9c-ecc7-4ac8-e3e1-4153faa7667d"
+      },
+      "source": [
+        "def divide_sets(list_a, list_b):\n",
+        "  \"\"\"\n",
+        "  Membagi elemen-elemen dari dua list.\n",
+        "\n",
+        "  Args:\n",
+        "    list_a: List berisi angka sebagai pembilang.\n",
+        "    list_b: List berisi angka sebagai penyebut.\n",
+        "\n",
+        "  Returns:\n",
+        "    List hasil pembagian.\n",
+        "\n",
+        "  Raises:\n",
+        "    ValueError: Jika panjang list tidak sama.\n",
+        "    ZeroDivisionError: Jika ada pembagian dengan nol.\n",
+        "  \"\"\"\n",
+        "  if len(list_a) != len(list_b):\n",
+        "    raise ValueError(\"Panjang kedua list harus sama.\")\n",
+        "\n",
+        "  result = []\n",
+        "  for i in range(len(list_a)):\n",
+        "    if list_b[i] == 0:\n",
+        "      raise ZeroDivisionError(f\"Pembagian dengan nol pada indeks {i}.\")\n",
+        "    result.append(list_a[i] / list_b[i])\n",
+        "  return result\n",
+        "\n",
+        "\n",
+        "set1 = [10, 20, 30]\n",
+        "set2 = [2, 5, 6]\n",
+        "try:\n",
+        "  division_result = divide_sets(set1, set2)\n",
+        "  print(f\"Hasil pembagian {set1} dengan {set2} adalah: {division_result}\")\n",
+        "except (ValueError, ZeroDivisionError) as e:\n",
+        "  print(f\"Terjadi kesalahan: {e}\")\n",
+        "\n",
+        "set3 = [10, 20]\n",
+        "set4 = [2, 5, 6]\n",
+        "try:\n",
+        "  divide_sets(set3, set4)\n",
+        "except (ValueError, ZeroDivisionError) as e:\n",
+        "  print(f\"Terjadi kesalahan: {e}\")\n",
+        "\n",
+        "# Contoh dengan pembagian nol (akan raise ZeroDivisionError)\n",
+        "set5 = [10, 20, 30]\n",
+        "set6 = [2, 0, 6]\n",
+        "try:\n",
+        "  divide_sets(set5, set6)\n",
+        "except (ValueError, ZeroDivisionError) as e:\n",
+        "  print(f\"Terjadi kesalahan: {e}\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hasil pembagian [10, 20, 30] dengan [2, 5, 6] adalah: [5.0, 4.0, 5.0]\n",
+            "Terjadi kesalahan: Panjang kedua list harus sama.\n",
+            "Terjadi kesalahan: Pembagian dengan nol pada indeks 1.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
